@@ -1,0 +1,243 @@
+/* seletor {propriedade: valor} */
+
+/* BOA PRÁTICA USAR O VALOR BORDER-BOX PARA BOX-SIZING,
+POIS JÁ SOMA AUTOMATICAMENTE O VALOR DE PADDING E BORDER QUANDO HOUVER */
+
+*{box-sizing: border-box;}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0!important;
+    padding: 0;
+    overflow: scroll;
+}
+
+.banner{
+    background-image: url("../img/banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 694px;
+    display: flex;
+    justify-content: center; /* alinha horizontalmente */
+    align-items: center; /* alinha verticalmente */
+}
+
+@media (max-width: 768px){
+    .banner{
+        height: 70vh;
+    }
+}
+
+@media (max-width: 420px){
+    .banner{
+        height: 90vh;
+        max-width: 420px;
+        background-position-x: -300px;
+    }
+}
+
+.texto{
+    text-align: center;
+}
+
+.texto h1{
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+@media (max-width: 768px)
+    {
+    .texto h1{
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 420px){
+    .texto h1{
+        line-height: 1.2em;
+        width: 6em;
+        word-wrap: break-word;
+    }
+}
+
+.texto p{
+    color:white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 768px){
+    .texto p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 420px){
+    .texto p{
+        margin-top: 20px;
+    }
+}
+
+.texto a{
+    background-color: white;
+    color: red;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/*segunda sessão*/
+.sobre-mim{
+    display: flex;
+    justify-content: center;
+    height: 380px;
+    padding-top: 30px;
+}
+
+@media (max-width: 420px){
+    .sobre-mim{
+        max-width: 420px;
+        display: inline-block;
+    }
+}
+
+.sobre-mim-descricao{
+    width: 500px;
+    padding: 30px 40px 30px 0px;
+}
+
+@media (max-width: 420px){
+    .sobre-mim-descricao{
+        max-width: 420px;
+        padding-left: 38px;
+    }
+}
+
+.sobre-mim-descricao h2{
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 420px){
+    .sobre-mim-descricao h2{
+        width: 9em;
+        word-wrap: break-word;
+    }
+}
+
+.sobre-mim-descricao h3{
+    font-weight: bold;
+}
+
+@media (max-width: 420px){
+    .sobre-mim-descricao h3{
+        font-size: 1.3em;
+        width: 17em;
+        word-wrap: break-word;
+    }
+}
+
+.descricao-conteudo{
+    padding-bottom: 40px;
+}
+
+.sobre-mim-descricao a{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    text-decoration: none;
+    text-transform: lowercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.lista{
+    margin-top: 88px;
+}
+
+@media (max-width: 420px){
+    .lista{
+        font-size: 1.3em;
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+}
+
+.lista p{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+li::before {content: "•"; color: red;
+    display: inline-block; width: 1em;
+    margin-left: -1em}
+
+.lista-itens {
+    padding-left: 20px;
+    line-height: 20px;
+  }
+
+  @media (max-width: 420px){
+    .lista-itens{
+        line-height: 25px;
+    }
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 420px){
+    .redes-sociais{
+        margin-top: 70px;
+    }
+}
+  
+.rede-social-especifica {
+    background-color: red;
+    color: white;
+    padding: 30px 40px;
+    margin: 20px;
+  }
+
+  @media (max-width: 420px){
+    .rede-social-especifica{
+        margin: 10px;
+        padding: 20px 30px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #dcdcdc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  @media (max-width: 420px){
+    .rodape{
+        margin-top: 80px;
+        display: block;
+    }
+} 
+  
+.rodape p {
+    margin: 15px;
+}
+
+@media (max-width: 768px){
+    .rodape p{
+        font-size: 0.9em;
+    }
+} 
